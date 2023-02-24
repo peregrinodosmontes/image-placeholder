@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="charset" content="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="description" content="Max 155 characters" />
+    <title>Page Title</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      :root {
+        --color-1: hsl(225, 6.25%, 6.25%);
+        --color-2: hsl(225, 6.25%, 12.5%);
+        --color-3: hsl(225, 6.25%, 25%);
+        --color-4: hsl(225, 6.25%, 50%);
+        --color-5: hsl(225, 6.25%, 75%);
+        --color-6: hsl(225, 6.25%, 87.5%);
+        --color-7: hsl(225, 6.25%, 93.75%);
+        --color-camouflage: hsl(45, 12.5%, 50%);
+        --color-champagne: hsl(0, 25%, 75%);
+        --color-sand: hsl(22.5, 25%, 75%);
+        --color-primary: #21b354;
+        --font-cursive: "Monotype Corsiva", "Comic Sans MS", cursive;
+        --font-monospace: "Courier New", Courier, monospace;
+        --font-sans: Arial, Verdana, sans-serif;
+        --font-serif: Georgia, Times, serif;
+      }
+
+      * {
+        border: none;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        background-color: var(--color-6);
+        color: var(--color-2);
+        font-family: var(--font-sans);
+        font-size: 100%;
+        min-height: 100%;
+        padding: 1.25em;
+      }
+
+      header, main, footer {
+        background-color: var(--color-7);
+      }
+
+      h1, h2, h3, a {
+        color: #08d;
+        font-weight: normal;
+      }
+
+      /*
+       * Escala de 12 pixels: 8px, 9px, 10px, 11px, 12px, 14px, 18px, 24px, 36px, 48px, 60px, 72px.
+       * Escala de 16 pixels: calc(12px / .75).
+       * Formatos de fonte: 1. eot; 2. woff; 3. ttf/otf; 4. svg.
+       */
+
+      h1 {
+        font-family: var(--font-serif);
+        font-size: 2.5em;
+        padding-bottom: .625em;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, .25);
+      }
+
+      h2 {
+        font-family: "Gill Sans", Arial, sans-serif;
+        font-size: .9em;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-family: var(--font-sans);
+        line-height: 1.4em;
+        color: #654;
+      }
+
+      .intro:fist-line {
+        font-weight: bold;
+      }
+
+      .credits {
+        font-style: italic;
+        text-align: right;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .image {
+        background: url(https://picsum.photos/200/300?grayscale) center center / cover no-repeat;
+        padding: 56.25%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Title</h1>
+      <h2>A simple subtitle</h2>
+      <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </header>
+    <main>
+      <h3>Main History</h3>
+      <!--<img src="images/photo-72ppi.jpg" alt="Photo caption" />-->
+      <div class="image"></div>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      <p class="credits">by Author Name</p>
+    </main>
+    <footer>
+      <p>&copy; Page Title</p>
+    </footer>
+  </body>
+</html>
