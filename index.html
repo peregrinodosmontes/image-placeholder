@@ -46,13 +46,33 @@
         padding: 1em;
       }
 
-      .hidden {
-        display: none;
-      }
-
       .container {
         margin: 0 auto;
         max-width: 67.5em;
+      }
+
+      header {
+        margin-bottom: .5em;
+      }
+
+      /*
+       * Escala de 12 pixels: 8px, 9px, 10px, 11px, 12px, 14px, 18px, 24px, 36px, 48px, 60px, 72px.
+       * Escala de 16 pixels: calc(12px / .75).
+       * Formatos de fonte: 1. eot; 2. woff; 3. ttf/otf; 4. svg.
+       */
+
+      h1 {
+        color: var(--color-3);
+        font-family: var(--font-serif);
+        font-size: 2em;
+        padding-bottom: .0625em;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, .25);
+      }
+
+      .subtitle {
+        font-weight: normal;
+        letter-spacing: .25em;
+        text-transform: uppercase;
       }
 
       figcaption {
@@ -85,39 +105,23 @@
         transform: translateY(-50%);
         width: 100%;
       }
-
-      /*
-       * Escala de 12 pixels: 8px, 9px, 10px, 11px, 12px, 14px, 18px, 24px, 36px, 48px, 60px, 72px.
-       * Escala de 16 pixels: calc(12px / .75).
-       * Formatos de fonte: 1. eot; 2. woff; 3. ttf/otf; 4. svg.
-       */
-
-      h1 {
-        color: var(--color-3);
-        font-family: var(--font-serif);
-        font-size: 2em;
-        padding-bottom: .0625em;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, .25);
-      }
-
-      .subtitle {
-        font-weight: normal;
-        letter-spacing: .25em;
-        text-transform: uppercase;
-      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Image Placeholder</h1>
-      <p class="subtitle">Espaço reservado para imagem</p>
-      <figure>
-        <!--<img src="images/photo-72ppi.jpg" alt="Image caption" />-->
-        <div class="image">
-          <p class="image__text">Imagem 16:9</p>
-        </div>
-        <figcaption>Legenda da imagem</figcaption>
-      </figure>
+      <header>
+        <h1>Image Placeholder</h1>
+        <p class="subtitle">Espaço reservado para imagem</p>
+      </header>
+      <main>
+        <figure>
+          <!--<img src="images/photo-72ppi.jpg" alt="Image caption" />-->
+          <div class="image">
+            <p class="image__text">Imagem 16:9</p>
+          </div>
+          <figcaption>Legenda da imagem</figcaption>
+        </figure>
+      </main>
     </div> <!-- end .container -->
   </body>
 </html>
