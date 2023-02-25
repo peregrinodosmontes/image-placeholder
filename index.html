@@ -40,15 +40,54 @@
       body {
         background-color: var(--color-6);
         color: var(--color-3);
-        font-family: var(--font-sans);
-        font-size: 100%;
+        font-family: var(--font-monospace);
+        font-size: 80%;
+        letter-spacing: .125em;
         min-height: 100%;
-        padding: 1em;
+      }
+
+      .hidden {
+        display: none;
       }
 
       .container {
+        background-color: var(--color-7);
+        border: medium double var(--color-3);
+        margin: .5em auto;
+        max-width: 60em;
+        min-width: 45em;
+        padding: 1em;
+      }
+
+      #logo {
+        max-width: 7.5em;
+        padding-top: 56.25%;
+      }
+
+      .image {
+        align-items: center;
+        background-color: var(--color-6);
+        display: flex;
+        justify-content: center;
+      }
+
+      .image__text {
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--color-4);
+      }
+
+      ul {
+        border-bottom: .0625em solid var(--color-3);
+        border-top: .125em solid var(--color-3);
         margin: 0 auto;
-        max-width: 72em;
+        max-width: 37.5em;
+        padding: 1em;
+      }
+
+      li {
+        display: inline;
+        margin: 0 .125em;
       }
 
       .box {
@@ -88,25 +127,21 @@
       }
 
       p {
-        font-family: var(--font-sans);
         font-size: 1em;
-        line-height: 1.4em;
+        line-height: 1.5em;
+        text-align: center;
+        width: 37.5em;
       }
 
-      .intro:first-line {
-        font-weight: bold;
-      }
-
-      .credits {
-        font-style: italic;
-        text-align: right;
-      }
-
-      a {
+      .nav__link {
+        color: inherit;
+        padding: .5em 1em;
         text-decoration: none;
+        text-transform: uppercase;
       }
 
-      a:hover {
+      nav__link:hover, nav__link.on {
+        color: var(--color-camouflage);
         text-decoration: underline;
       }
 
@@ -125,33 +160,38 @@
         font-size: .875em;
         font-weight: light;
       }
-
-      .copy {
-        text-align: center;
-      }
     </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Title</h1>
-        <h2>A simple subtitle</h2>
-        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div id="logo" class="image">
+          <p class="image__text">Page logo</p>
+        </div>
+        <h1 class="hidden">Page title</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">For Sale</a></li>
+            <li><a href="#" class="nav__link">Repairs</a></li>
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
       </header>
-      <main class="box">
-        <h3>Main History</h3>
+      <main>
         <figure>
           <!--<img src="images/photo-72ppi.jpg" alt="Image caption" />-->
-          <div class="image"></div>
+          <div class="image">
+            <p class="image__text">Example image</p>
+          </div>
           <figcaption class="caption">Image caption</figcaption>
         <figure>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-        <p class="credits">by Author Name</p>
       </main>
       <footer>
         <p class="copy">&copy; Page Title</p>
       </footer>
     </div> <!-- end .container -->
-    </article>
   </body>
 </html>
