@@ -1,3 +1,3 @@
-# HTML & CSS
+# Image Placeholder
 
-Laboratório de testes: [peregrinodosmontes.github.io/html-css](https://peregrinodosmontes.github.io/html-css/)
+Reserve espaço para uma imagem: [peregrinodosmontes.github.io/image-placeholder](https://peregrinodosmontes.github.io/image-placeholder)
